@@ -1,0 +1,8 @@
+<h1>Service-Data-Angular</h1>
+<ul class="list-group">
+    <app-post *ngFor="let mensajes of mensajes |async" [mensaje]="mensajes"(clickPost)="escuchandoClick($event)"></app-post>
+    <!--<li *ngFor="let post of mensajes |async" class="list-group-item">
+        <h3>{{post.title}}</h3>
+        <p>{{post.body}}</p>
+    </li>-->
+</ul>
